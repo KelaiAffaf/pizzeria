@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Shop</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            background-color: #f8f8f8;
+        }
+
+        header img {
+            width: 100px;
+            margin-right: 10px;
+        }
+
+        header h3 {
+            margin: 0;
+        }
+
+        nav ul {
+            display: flex;
+            gap: 8px;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        section h1 {
+            margin-bottom: 20px;
+        }
+
+        section img {
+            width: 200px;
+            margin-right: 10px;
+        }
+
+        .pizza-section {
+            border: 1px solid #ccc;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+        }
+
+        .pizza-section h3 {
+            margin-top: 0;
+        }
+
+        .pizza-section ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .pizza-section li {
+            margin-bottom: 8px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        form div {
+            margin-bottom: 15px;
+        }
+
+        form label {
+            margin-bottom: 5px;
+        }
+
+        form input {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        form button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .social-media {
+            margin-top: 10px;
+        }
+
+        .social-media a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+
+        .contact-info {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="./logo.jpg" alt="pizza logo" width="100px"> 
+        <h3>Pizzorino Website</h3>
+        <nav>
+            <ul>
+                <li><a href="default.asp">Home</a></li>
+                <li><a href="news.asp">News</a></li>
+                <li><a href="contact.asp">Contact</a></li>
+                <li><a href="about.asp">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h1>Who we are ? </h1>
+        <div style="display:flex;align-items:center;gap:8px">
+            <img src="./pizza3.jpg" alt="" width="200px" height="200px">
+            <p>
+                Step into the savory world of <b><i>Street Pizza</i></b>, where the hustle and bustle of the city meet the delicious aromas of freshly baked pies. At Street Pizza, we're not just serving pizza; we're curating an urban culinary experience. Our handcrafted pizzas boast a perfect blend of flavors and textures, reflecting the vibrant energy of the streets. From classic favorites to bold, innovative combinations, every slice tells a story. Join us on this flavorful journey through the heart of the city at Street Pizza, where every bite is a taste of urban delight
+            </p>
+        </div>
+    </section>
+
+    <section>
+        <h1>Our Menu </h1>
+        <img src="1.jpg" alt="" width="200px">
+        <img src="2.jpg" alt="" width="200px">
+        <img src="3.jpeg" alt="" width="200px" height="133px">
+    </section>
+
+    <section>
+        <h1>Available flavors</h1>
+        <div class="pizza-section">
+            <h3>Classic Krabby Supreme:</h3>
+            <ul>
+                <li>Krabmeat</li>
+                <li>Red and green bell peppers</li>
+                <li>Red onions</li>
+                <li>Black olives</li>
+                <li>Mozzarella cheese</li>
+            </ul>
+        </div>
+
+        <div class="pizza-section">
+            <h3>Spicy Krabby Inferno:</h3>
+            <ul>
+                <li>Spicy krabmeat</li>
+                <li>Jalapeños</li>
+                <li>Pepperoni</li>
+                <li>Banana peppers</li>
+                <li>Sriracha-infused tomato sauce</li>
+                <li>Mozzarella cheese</li>
+            </ul>
+        </div>
+
+        <div class="pizza-section">
+            <h3>Mediterranean Krabby Delight:</h3>
+            <ul>
+                <li>Krabmeat</li>
+                <li>Cherry tomatoes</li>
+                <li>Kalamata olives</li>
+                <li>Feta cheese</li>
+                <li>Fresh basil</li>
+                <li>Mozzarella cheese</li>
+                <li>Olive oil drizzle</li>
+            </ul>
+        </div>
+
+        <div class="pizza-section">
+            <h3>Garlic Butter Krabby Elegance:</h3>
+            <ul>
+                <li>Krabmeat</li>
+                <li>Mushrooms</li>
+                <li>Spinach</li>
+                <li>Roasted garlic</li>
+                <li>Parmesan cheese</li>
+                <li>Mozzarella cheese</li>
+                <li>Garlic butter sauce</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h1>Contact Us</h1>
+        <form action="">
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div>
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <button type="submit">Contact Pizzorino</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Street Pizza. All rights reserved.</p>
+        <div class="social-media">
+            <a href="#" target="_blank">Facebook</a>
+            <a href="#" target="_blank">Twitter</a>
+            <a href="#" target="_blank">Instagram</a>
+        </div>
+        <div class="contact-info">
+            <p>For inquiries, call us at: <strong>(123) 456-7890</strong></p>
+        </div>
+    </footer>
+
+</body>
+</html>
